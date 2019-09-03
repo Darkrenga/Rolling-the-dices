@@ -51,3 +51,4 @@ function rollTheDice() {
 
 // Kaster terningerne når siden loades
 rollTheDice();
+
