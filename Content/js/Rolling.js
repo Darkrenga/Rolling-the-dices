@@ -3,7 +3,7 @@ let num_dices = 2;
 // Array til terninger
 let array_dices = [];
 // Sætter array til engelske tal - skal bruges til font awesome ikoner
-let array_dice_names = ["", "one", "two", "three", "four", "five", "six"];
+let array_dice_names = ["", "Et_hul", "To_hul", "Tre_hul", "Fire_hul", "Fem_hul", "Seks_hul"];
 // Sætter var til html element der skal vise resultater
 let display_result = document.getElementById("display_result");
 // Sætter addEventListener til klik på knap
@@ -43,7 +43,7 @@ function rollTheDice() {
         // Opretter <i> element til font awesome ikon
         let elm = document.createElement("i");
         // Tilføjer class attribute med font awesome klasser til element
-        elm.setAttribute("class", "dice fas fa-dice-" + array_dice_names[num]);
+        elm.setAttribute("id", + array_dice_names[num]);
         // Tilføjer element til div id gameboard
         gameboard.appendChild(elm);
     }
