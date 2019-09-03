@@ -13,22 +13,7 @@ html {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-#gameboard{
-  position: absolute;
-  top: 25%;
-  left: 35%;
-  background-color: aqua;
-  
-  color: rgba(200, 100, 255, 0.5);
-  margin: 0 auto;
-  display: flex;
-  
-  justify-content: space-around;
-  width: 30%;
-}
-#gameboard i{
- background-color: red;
-}
+
 
 
 /*# sourceMappingURL=main.css.map */

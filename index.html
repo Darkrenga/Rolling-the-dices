@@ -9,9 +9,9 @@
    
   <style type="text/css">
 	.st0{
-		fill:none;
+		fill:red;
 		stroke:#3FA9F5;
-		stroke-miterlimit:10;
+        stroke-miterlimit:10;
     }
     .st1{
 		fill:red;
@@ -44,9 +44,7 @@
 <body>
 
     
-    <div id="gameboard">
-        <div id="rollthedice"></div>
-    </div>
+   
 
     <button class="roleDice" onclick="rollTheDice()">Try your luck</button>
     
@@ -245,15 +243,21 @@
 </g>
 </defs>
 <!--Hej-->
-<use x="-650" y="-500" xlink:href="#Fire_hul"></use>
-<animateTransform attributeType="xml"
-      attributeName="transform"
-      type="rotate"
-      from="0 -200 -200"
-      to="360 -200 -200"
-      dur="1s"
-      repeatCount="indefinite"/>
 
+    <use xlink:href="#Fire_hul" x="-650" y="-500"></use>
+    <use xlink:href="#Et_hul" x="-1023.5" y="233.5" ></use>
+    <use xlink:href="#To_hul" x="-1023.5" y="-141"></use>
+    <use xlink:href="#Tre_hul" x="-1023.5" y="-500"></use>
+    <use xlink:href="#Fem_hul" x="-650" y="-141"></use>
+    <use xlink:href="#Seks_hul" x="-650" y="233.5"></use>
+    
+
+    <use xlink:href="#Fire_hul" x="-200" y="-500"></use>
+    <use xlink:href="#Et_hul" x="-573.5" y="233.5" ></use>
+    <use xlink:href="#To_hul" x="-573.5" y="-141"></use>
+    <use xlink:href="#Tre_hul" x="-573.5" y="-500"></use>
+    <use xlink:href="#Fem_hul" x="-200" y="-141"></use>
+    <use xlink:href="#Seks_hul" x="-200" y="233.50"></use>
 
 </svg>
     <script src="Content/js/Rolling.js"></script>
