@@ -1,19 +1,34 @@
-html {
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
-.roleDice{
-  position: absolute;
-  bottom: 5%;
-  left: 45%;
-  width: 10%;
-  padding: 0.5%;
-  background-color: green;
-  border: 3px solid orange;
-  color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.dice {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px 15px 0;
+  width: 60px;
+  height: 60px;
+  background-color: #e7e7e7;
+  box-shadow: inset 0 5px white, inset 0 -5px #bbb, inset 5px 0 #d7d7d7, inset -5px 0 #d7d7d7;
+  border-radius: 10%;
+  font-size: 24px;
+}
 
-/*# sourceMappingURL=main.css.map */
+button {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
