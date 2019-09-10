@@ -1,3 +1,37 @@
 html{
     margin: 0;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dice {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px 15px 0;
+    width: 60px;
+    height: 60px;
+   
+  
+    
+  }
+  
+  button {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
