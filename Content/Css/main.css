@@ -22,7 +22,7 @@ body {
   margin: 0 5px 15px 0;
   width: 60px;
   height: 60px;
-  background-color: #e7e7e7;
+  background-color: orange;
   box-shadow: inset 0 5px white, inset 0 -5px #bbb, inset 5px 0 #d7d7d7, inset -5px 0 #d7d7d7;
   border-radius: 10%;
   font-size: 24px;
