@@ -14,8 +14,9 @@
     
     </style>
     <body>
-    
-        <H1 id="winner">Roll the dices</H1>   
+    <div class="overskrift">
+        <H1 id="winner">Roll the dices</H1> 
+      </div>  
   <section class="gameBoard">
       <div id="playerOne">
         <div id="die1" class="dice">
@@ -60,10 +61,10 @@
   </section>
       
   <div class="results">
-      <h3>Your score is: <span id="counter1">0</span></h3>
+      <h2>Your score is: <span id="counter1">0</span></h2>
       <h2 id="result1">Player 1</h2>
       <h2 id="result2">Player 2</h2>
-      <h3>Your score is: <span id="counter2">0</span></h3>
+      <h2>Your score is: <span id="counter2">0</span></h2>
     </div>
       <button id="spil" onclick="rollDice1()" onclick="player1win()">Roll Dice</button>
       <button id="reset" onclick="gameReset()">New game</button>

@@ -1,10 +1,14 @@
+$red: red;
+$amount: 50%;
+
 html{
     margin: 0;
 }
 * {
     box-sizing: border-box;
-    color: #303004;
+    
     font-family: 'Indie Flower', cursive;
+    color: wheat;
   }
   
   html, body {
@@ -12,6 +16,7 @@ html{
     overflow: hidden;
   }
   body {
+    background-image: url("../Images/table.jpg");
     display: -webkit-box;
     display: -ms-flexbox;
     -webkit-box-orient: vertical;
@@ -23,15 +28,22 @@ html{
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .overskrift{
+    width: 61%;
+    text-align: center;
+  }
+  //hej
   h1{
     font-size: 6rem;
     border-radius: 25px;
     padding: 15px;
     background-color: blueviolet;
-    border: 5px solid wheat;
-    box-shadow: (8px 8px 10px white);
+    color: #303004;
+    box-shadow: (8px 8px 10px wheat);
     text-shadow: (2px 2px 8px wheat);
-    
+}
+h2{
+  font-size: 2rem;
 }
 .gameBoard{
   display: flex;
@@ -64,6 +76,9 @@ html{
 .st0{
   fill: red;
 }
+.st1{
+  fill: none;
+}
 #die1, #die2, #die3, #die4 {
   filter: drop-shadow( 8px 8px 5px wheat);
   padding: 10px;
@@ -74,11 +89,18 @@ button {
     width: 200px;
     border: 3px solid wheat;
   color: wheat;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  cursor: pointer;
+  box-shadow: 6px 6px 10px wheat;
+  &:hover{
+    background-color: #cc0000;
   }
-
-  
+  }
+button:active{
+  padding: 14.5px 0 14.5px 0;
+  box-shadow: 2px 2px 8px wheat;
+} 
 #spil{
   background-color: red;
   border-radius: 20px 50px ;
@@ -86,4 +108,10 @@ button {
 #reset{
   background-color: blueviolet;
   border-radius: 50px 20px;
+}
+#reset:hover{
+  background-color: #4e1287;
+}
+#spil:hover {
+  background-color: #cc0000;
 }

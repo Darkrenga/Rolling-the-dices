@@ -5,8 +5,8 @@ html {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #303004;
   font-family: 'Indie Flower', cursive;
+  color: wheat;
 }
 
 html, body {
@@ -15,6 +15,7 @@ html, body {
 }
 
 body {
+  background-image: url("../Images/table.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   -webkit-box-orient: vertical;
@@ -27,15 +28,24 @@ body {
   justify-content: center;
 }
 
+.overskrift {
+  width: 61%;
+  text-align: center;
+}
+
 h1 {
   font-size: 6rem;
   border-radius: 25px;
   padding: 15px;
   background-color: blueviolet;
-  border: 5px solid wheat;
-  -webkit-box-shadow: 8px 8px 10px white;
-          box-shadow: 8px 8px 10px white;
+  color: #303004;
+  -webkit-box-shadow: 8px 8px 10px wheat;
+          box-shadow: 8px 8px 10px wheat;
   text-shadow: 2px 2px 8px wheat;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 .gameBoard {
@@ -83,6 +93,10 @@ h1 {
   fill: red;
 }
 
+.st1 {
+  fill: none;
+}
+
 #die1, #die2, #die3, #die4 {
   -webkit-filter: drop-shadow(8px 8px 5px wheat);
           filter: drop-shadow(8px 8px 5px wheat);
@@ -95,8 +109,21 @@ button {
   width: 200px;
   border: 3px solid wheat;
   color: wheat;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  cursor: pointer;
+  -webkit-box-shadow: 6px 6px 10px wheat;
+          box-shadow: 6px 6px 10px wheat;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+button:active {
+  padding: 14.5px 0 14.5px 0;
+  -webkit-box-shadow: 2px 2px 8px wheat;
+          box-shadow: 2px 2px 8px wheat;
 }
 
 #spil {
@@ -107,5 +134,13 @@ button {
 #reset {
   background-color: blueviolet;
   border-radius: 50px 20px;
+}
+
+#reset:hover {
+  background-color: #4e1287;
+}
+
+#spil:hover {
+  background-color: #cc0000;
 }
 /*# sourceMappingURL=main.css.map */
