@@ -1,6 +1,10 @@
 // Inde i denne --> /**  */  bliver der skrevet hvordan det fungere
 // Inde I denne --> // bliver der skrevet hvad den gør
 
+var counter1 = 0; //anvendes til score og sætter værdien 0
+var counter2 = 0; //anvendes til score og sætter værdien 0
+
+  
 function rollDice1() { //Vores funktion som kører på klikket, den får alle tærninger til at "rulle", få en værdi, vise tærningerne og fortælle hvem vinderen er
     const die1 = document.getElementById('die1'); //Const som definere den første tærningen men mangler værdi og graffik (Grafikken er baseret på værdien)
     const die2 = document.getElementById('die2'); //Const som definere den anden tærningen men mangler værdi og graffik (Grafikken er baseret på værdien)
@@ -36,6 +40,7 @@ function rollDice1() { //Vores funktion som kører på klikket, den får alle t�
      ** dette gør den så indtil at den har fået skudt fire terninger ind
      */
     //Hvis værdien er 1 til tærning 1 så bliver denne vist
+
     if (d1 === 1){die1.innerHTML = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 338 338" style="enable-background:new 0 0 338 338;" xml:space="preserve"><g id="Et_hul"><path class="st0" d="M50,337.5c-27.29,0-49.5-22.21-49.5-49.5V50C0.5,22.71,22.71,0.5,50,0.5h238c27.29,0,49.5,22.21,49.5,49.5v238c0,27.29-22.21,49.5-49.5,49.5H50z M168.5,131.5c-20.95,0-38,17.05-38,38s17.05,38,38,38s38-17.05,38-38S189.45,131.5,168.5,131.5z"/><path class="st1" d="M288,1c27.02,0,49,21.98,49,49v238c0,27.02-21.98,49-49,49H50c-27.02,0-49-21.98-49-49V50C1,22.98,22.98,1,50,1H288 M168.5,208c21.23,0,38.5-17.27,38.5-38.5S189.73,131,168.5,131S130,148.27,130,169.5S147.27,208,168.5,208 M288,0H50C22.5,0,0,22.5,0,50v238c0,27.5,22.5,50,50,50h238c27.5,0,50-22.5,50-50V50C338,22.5,315.5,0,288,0L288,0z M168.5,207c-20.71,0-37.5-16.79-37.5-37.5s16.79-37.5,37.5-37.5s37.5,16.79,37.5,37.5S189.21,207,168.5,207L168.5,207z"/></g></svg>'};
     
     //Hvis værdien er 2 til tærning 1 så bliver denne vist
@@ -109,18 +114,27 @@ function rollDice1() { //Vores funktion som kører på klikket, den får alle t�
     //Hvis værdien er 6 til tærning 4 så bliver denne vist
     if (d4 === 6){die4.innerHTML = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 338 338" style="enable-background:new 0 0 338 338;" xml:space="preserve"><g id="Seks_hul"><path class="st0" d="M50,337.5c-27.29,0-49.5-22.21-49.5-49.5V50C0.5,22.71,22.71,0.5,50,0.5h238c27.29,0,49.5,22.21,49.5,49.5v238c0,27.29-22.21,49.5-49.5,49.5H50z M256.5,216.5c-20.95,0-38,17.05-38,38s17.05,38,38,38s38-17.05,38-38S277.45,216.5,256.5,216.5z M81.5,216.5c-20.95,0-38,17.05-38,38s17.05,38,38,38s38-17.05,38-38S102.45,216.5,81.5,216.5zM256.5,131.5c-20.95,0-38,17.05-38,38s17.05,38,38,38s38-17.05,38-38S277.45,131.5,256.5,131.5z M81.5,131.5c-20.95,0-38,17.05-38,38s17.05,38,38,38s38-17.05,38-38S102.45,131.5,81.5,131.5z M256.5,46.5c-20.95,0-38,17.05-38,38s17.05,38,38,38s38-17.05,38-38S277.45,46.5,256.5,46.5z M81.5,46.5c-20.95,0-38,17.05-38,38s17.05,38,38,38s38-17.05,38-38S102.45,46.5,81.5,46.5z"/><path class="st1" d="M288,1c27.02,0,49,21.98,49,49v238c0,27.02-21.98,49-49,49H50c-27.02,0-49-21.98-49-49V50C1,22.98,22.98,1,50,1H288 M256.5,123c21.23,0,38.5-17.27,38.5-38.5S277.73,46,256.5,46S218,63.27,218,84.5S235.27,123,256.5,123M81.5,123c21.23,0,38.5-17.27,38.5-38.5S102.73,46,81.5,46S43,63.27,43,84.5S60.27,123,81.5,123 M256.5,208c21.23,0,38.5-17.27,38.5-38.5S277.73,131,256.5,131S218,148.27,218,169.5S235.27,208,256.5,208 M81.5,208c21.23,0,38.5-17.27,38.5-38.5S102.73,131,81.5,131S43,148.27,43,169.5S60.27,208,81.5,208 M256.5,293c21.23,0,38.5-17.27,38.5-38.5S277.73,216,256.5,216S218,233.27,218,254.5S235.27,293,256.5,293 M81.5,293c21.23,0,38.5-17.27,38.5-38.5S102.73,216,81.5,216S43,233.27,43,254.5S60.27,293,81.5,293 M288,0H50C22.5,0,0,22.5,0,50v238c0,27.5,22.5,50,50,50h238c27.5,0,50-22.5,50-50V50C338,22.5,315.5,0,288,0L288,0z M256.5,122c-20.71,0-37.5-16.79-37.5-37.5S235.79,47,256.5,47S294,63.79,294,84.5S277.21,122,256.5,122L256.5,122zM81.5,122C60.79,122,44,105.21,44,84.5S60.79,47,81.5,47S119,63.79,119,84.5S102.21,122,81.5,122L81.5,122z M256.5,207c-20.71,0-37.5-16.79-37.5-37.5s16.79-37.5,37.5-37.5s37.5,16.79,37.5,37.5S277.21,207,256.5,207L256.5,207zM81.5,207C60.79,207,44,190.21,44,169.5S60.79,132,81.5,132s37.5,16.79,37.5,37.5S102.21,207,81.5,207L81.5,207z M256.5,292c-20.71,0-37.5-16.79-37.5-37.5s16.79-37.5,37.5-37.5s37.5,16.79,37.5,37.5S277.21,292,256.5,292L256.5,292z M81.5,292C60.79,292,44,275.21,44,254.5S60.79,217,81.5,217s37.5,16.79,37.5,37.5S102.21,292,81.5,292L81.5,292z"/></g></svg>'};
 
-
-    // her kører nogle flere if statements som fortæller hvem der vandt 
+  
+     var score1 = (function() { 
+      return function () {counter1 = counter1 + 1; return counter1;}//beregner score værdien ved at tage den oprindelige værdi plus 1
+    })();  
+    var score2 = (function() {
+      return function () {counter2 += 1; return counter2;}//beregner score værdien ved at tage den oprindelige værdi plus 1
+    })();
+  
+      // her kører nogle flere if statements som fortæller hvem der vandt 
     /**Der er 3 som kører her, en for hver spiller og 1 for uafgjort */
-
-    /** Hvis spiller 1 har højere øjne kommer funktionen her ind og siger at han har vundet */
-    if(diceTotal1 > diceTotal2){ //kører hvis spiller 1 vandt
-        document.getElementById("winner").innerHTML = "Player 1 wins"; //skyder ind at spiller 1 vandt 
+  
+  /** Hvis spiller 1 har højere øjne kommer funktionen her ind og siger at han har vundet */
+  if(diceTotal1 > diceTotal2){ //kører hvis spiller 1 vandt
+      document.getElementById("winner").innerHTML = "Turn goes to Player 1"; //skyder ind at spiller 1 vandt
+      document.getElementById("counter1").innerHTML = score1(); //Indsætter den nye værdi fra variablen score1
     }
-
-    /** Hvis spiller 2 har højere øjne kommer funktionen her ind og siger at han har vundet */
-    if(diceTotal1 < diceTotal2){ //kører hvis spiller 2 vandt
-        document.getElementById("winner").innerHTML = "Player 2 wins"; //skyder ind at spiller 2 vandt
+  
+   /** Hvis spiller 2 har højere øjne kommer funktionen her ind og siger at han har vundet */  
+   if(diceTotal1 < diceTotal2){  //kører hvis spiller 2 vandt
+      document.getElementById("winner").innerHTML = "Turn goes to Player 2";  //skyder ind at spiller 2 vandt
+      document.getElementById("counter2").innerHTML = score2();//Indsætter den nye værdi fra variablen score2
     }
 
     /** Hvis de har lige mange kommer funktionen her ind og fortæller at det er uafgjort */
