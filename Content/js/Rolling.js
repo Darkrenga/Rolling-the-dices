@@ -64,4 +64,5 @@ function rollDice1() {
     if(diceTotal1 === diceTotal2){
       document.getElementById("winner").innerHTML = "It's a tie";
     }
+    
 }
