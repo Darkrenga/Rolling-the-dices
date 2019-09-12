@@ -1,3 +1,61 @@
 html{
     margin: 0;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  h1{
+    font-size: 6rem;
+  }
+.gameBoard{
+  display: flex;
+  align-items: center;
+  
+}
+.dice {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 5px 15px 0;
+  width: 200px;
+  height: 200px;
+}
+.gameBoard{
+  width: 100%;
+  justify-content: space-evenly;
+}
+.results{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+.results h2
+  button {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
