@@ -3,6 +3,8 @@ html{
 }
 * {
     box-sizing: border-box;
+    color: #303004;
+    font-family: 'Indie Flower', cursive;
   }
   
   html, body {
@@ -23,7 +25,14 @@ html{
   }
   h1{
     font-size: 6rem;
-  }
+    border-radius: 25px;
+    padding: 15px;
+    background-color: blueviolet;
+    border: 5px solid wheat;
+    box-shadow: (8px 8px 10px white);
+    text-shadow: (2px 2px 8px wheat);
+    
+}
 .gameBoard{
   display: flex;
   align-items: center;
@@ -51,19 +60,25 @@ html{
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-
+}
+.st0{
+  fill: red;
+}
+#die1, #die2, #die3, #die4 {
+  filter: drop-shadow( 8px 8px 5px wheat);
+  padding: 10px;
 }
 button {
     padding: 1rem;
     margin: 4rem 1rem 0 1rem;
     width: 200px;
-   
     border: 3px solid wheat;
   color: wheat;
   font-size: 1rem;
   font-weight: bold;
   }
 
+  
 #spil{
   background-color: red;
   border-radius: 20px 50px ;

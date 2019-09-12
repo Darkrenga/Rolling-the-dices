@@ -122,18 +122,20 @@ function rollDice1() { //Vores funktion som kører på klikket, den får alle t�
       return function () {counter2 += 1; return counter2;}//beregner score værdien ved at tage den oprindelige værdi plus 1
     })();
   
+  
       // her kører nogle flere if statements som fortæller hvem der vandt 
     /**Der er 3 som kører her, en for hver spiller og 1 for uafgjort */
   
   /** Hvis spiller 1 har højere øjne kommer funktionen her ind og siger at han har vundet */
   if(diceTotal1 > diceTotal2){ //kører hvis spiller 1 vandt
-      document.getElementById("winner").innerHTML = "Turn goes to Player 1"; //skyder ind at spiller 1 vandt
+      document.getElementById("winner").innerHTML = "Round goes to Player 1"; //skyder ind at spiller 1 vandt
       document.getElementById("counter1").innerHTML = score1(); //Indsætter den nye værdi fra variablen score1
     }
+
   
    /** Hvis spiller 2 har højere øjne kommer funktionen her ind og siger at han har vundet */  
    if(diceTotal1 < diceTotal2){  //kører hvis spiller 2 vandt
-      document.getElementById("winner").innerHTML = "Turn goes to Player 2";  //skyder ind at spiller 2 vandt
+      document.getElementById("winner").innerHTML = "Round goes to Player 2";  //skyder ind at spiller 2 vandt
       document.getElementById("counter2").innerHTML = score2();//Indsætter den nye værdi fra variablen score2
     }
 
@@ -141,4 +143,49 @@ function rollDice1() { //Vores funktion som kører på klikket, den får alle t�
     if(diceTotal1 === diceTotal2){ //kører hvis det er uafgjort
         document.getElementById("winner").innerHTML = "It's a tie"; //skyder ind at det er uafgjort
     }
+  
+
+    if(counter1 === 5){
+      document.getElementById("spil").style.display = "none";
+      document.getElementById("winner").innerHTML = "The winner is Player 1";
+      document.getElementById("winner").style.backgroundColor = "lightgreen";
+      document.getElementById("winner").style.color = "white";
+      document.getElementById("playerOne").style.fill = "lightgreen";
+    }
+    if(counter2 === 5){
+      document.getElementById("spil").style.display = "none";
+      document.getElementById("winner").innerHTML = "The winner is Player 2";
+      document.getElementById("winner").style.backgroundColor = "lightgreen";
+      document.getElementById("winner").style.color = "white";
+      document.getElementById("playerTwo").style.fill = "lightgreen";
+    }
+    if(counter1 + counter2 === 9){
+      document.getElementById("spil").style.display = "none";
+      document.getElementById("winner").style.backgroundColor = "lightgreen";
+      document.getElementById("winner").style.color = "white";
+      if(counter1 > counter2){
+        document.getElementById("winner").innerHTML = "The winner is Player 1";
+        document.getElementById("playerOne").style.fill = "lightgreen";
+      }
+      if(counter1 < counter2){
+        document.getElementById("winner").innerHTML = "The winner is Player 2";
+        document.getElementById("playerTwo").style.fill = "lightgreen";
+      }
+      if(counter1 === 5){
+        document.getElementById("spil").style.display = "none";
+        document.getElementById("winner").innerHTML = "The winner is Player 1";
+        document.getElementById("playerOne").style.fill = "lightgreen";
+
+      }
+      if(counter2 === 5){
+        document.getElementById("spil").style.display = "none";
+        document.getElementById("winner").innerHTML = "The winner is Player 2";
+        document.getElementById("playerTwo").style.fill = "lightgreen";
+      }
+    }
+
 }
+
+function gameReset(){
+  location.reload();
+} 
