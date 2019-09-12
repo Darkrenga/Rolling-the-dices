@@ -54,15 +54,56 @@ function rollDice1() {
     })();
 
     if(diceTotal1 > diceTotal2){
-      document.getElementById("winner").innerHTML = "Turn goes to Player 1";
+      document.getElementById("winner").innerHTML = "Round goes to Player 1";
       document.getElementById("counter1").innerHTML = score1(); //Indsætter den nye værdi fra variablen score1
+      
     }
     if(diceTotal1 < diceTotal2){
-      document.getElementById("winner").innerHTML = "Turn goes to Player 2";
+      document.getElementById("winner").innerHTML = "Round goes to Player 2";
       document.getElementById("counter2").innerHTML = score2();//Indsætter den nye værdi fra variablen score2
     }
     if(diceTotal1 === diceTotal2){
       document.getElementById("winner").innerHTML = "It's a tie";
     }
-    
+    if(counter1 === 5){
+      document.getElementById("spil").style.display = "none";
+      document.getElementById("winner").innerHTML = "The winner is Player 1";
+      document.getElementById("winner").style.backgroundColor = "lightgreen";
+      document.getElementById("winner").style.color = "white";
+      document.getElementById("playerOne").style.fill = "lightgreen";
+    }
+    if(counter2 === 5){
+      document.getElementById("spil").style.display = "none";
+      document.getElementById("winner").innerHTML = "The winner is Player 2";
+      document.getElementById("winner").style.backgroundColor = "lightgreen";
+      document.getElementById("winner").style.color = "white";
+      document.getElementById("playerTwo").style.fill = "lightgreen";
+    }
+    if(counter1 + counter2 === 9){
+      document.getElementById("spil").style.display = "none";
+      document.getElementById("winner").style.backgroundColor = "lightgreen";
+      document.getElementById("winner").style.color = "white";
+      if(counter1 > counter2){
+        document.getElementById("winner").innerHTML = "The winner is Player 1";
+        document.getElementById("playerOne").style.fill = "lightgreen";
+      }
+      if(counter1 < counter2){
+        document.getElementById("winner").innerHTML = "The winner is Player 2";
+        document.getElementById("playerTwo").style.fill = "lightgreen";
+      }
+      if(counter1 === 5){
+        document.getElementById("spil").style.display = "none";
+        document.getElementById("winner").innerHTML = "The winner is Player 1";
+        document.getElementById("playerOne").style.fill = "lightgreen";
+
+      }
+      if(counter2 === 5){
+        document.getElementById("spil").style.display = "none";
+        document.getElementById("winner").innerHTML = "The winner is Player 2";
+        document.getElementById("playerTwo").style.fill = "lightgreen";
+      }
+    }
 }
+function gameReset(){
+  location.reload();
+} 
