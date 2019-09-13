@@ -40,7 +40,7 @@ function rollDice1() { //Vores funktion som kører på klikket, den får alle t�
      ** dette gør den så indtil at den har fået skudt fire terninger ind
      */
     //Hvis værdien er 1 til tærning 1 så bliver denne vist
-
+    // alle svg'erne for terning et har fill="red" her i  og CSS-->
     if (d1 === 1){die1.innerHTML = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 338 338" style="enable-background:new 0 0 338 338;" xml:space="preserve"><g id="Et_hul"><path class="st0 p1Dice" fill="red" d="M50,337.5c-27.29,0-49.5-22.21-49.5-49.5V50C0.5,22.71,22.71,0.5,50,0.5h238c27.29,0,49.5,22.21,49.5,49.5v238c0,27.29-22.21,49.5-49.5,49.5H50z M168.5,131.5c-20.95,0-38,17.05-38,38s17.05,38,38,38s38-17.05,38-38S189.45,131.5,168.5,131.5z"/><path class="st1" d="M288,1c27.02,0,49,21.98,49,49v238c0,27.02-21.98,49-49,49H50c-27.02,0-49-21.98-49-49V50C1,22.98,22.98,1,50,1H288 M168.5,208c21.23,0,38.5-17.27,38.5-38.5S189.73,131,168.5,131S130,148.27,130,169.5S147.27,208,168.5,208 M288,0H50C22.5,0,0,22.5,0,50v238c0,27.5,22.5,50,50,50h238c27.5,0,50-22.5,50-50V50C338,22.5,315.5,0,288,0L288,0z M168.5,207c-20.71,0-37.5-16.79-37.5-37.5s16.79-37.5,37.5-37.5s37.5,16.79,37.5,37.5S189.21,207,168.5,207L168.5,207z"/></g></svg>'};
     
     //Hvis værdien er 2 til tærning 1 så bliver denne vist
@@ -150,7 +150,7 @@ function rollDice1() { //Vores funktion som kører på klikket, den får alle t�
       document.getElementById("winner").style.backgroundColor = "lightgreen";//ændre baggrundsfarven
       document.getElementById("winner").style.color = "white";//ændre tekst farven
       //document.getElementsByClassName("p1Dice").removeAttribute("fill"); //Test i at skifte terningers fill for vinder (virker ikke, fill er allerede defineret)
-      //document.getElementByClassName("playerOne").style.fill = "lightgreen";//Test i at skifte terningers fill for vinder (virker ikke, fill er allerde defineret)
+      //document.getElementByClassName("p1Dice").style.fill = "lightgreen";//Test i at skifte terningers fill for vinder (virker ikke, fill er allerde defineret)
     }
 
     /** Ved spiller 2 har vundet 5 runder fjernes Roll knappen winner ændre text og skifter farve i baggrund og text  */
