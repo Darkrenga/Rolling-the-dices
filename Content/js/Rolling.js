@@ -143,21 +143,24 @@ function rollDice1() { //Vores funktion som kører på klikket, den får alle t�
     if(diceTotal1 === diceTotal2){ //kører hvis det er uafgjort
         document.getElementById("winner").innerHTML = "It's a tie"; //skyder ind at det er uafgjort
     }
+    /** Ved spiller 1 har vundet 5 runder fjernes Roll knappen winner ændre text og skifter farve i baggrund og text */
     if(counter1 === 5){
-      document.getElementById("spil").style.display = "none";
-      document.getElementById("winner").innerHTML = "The winner is Player 1";
-      document.getElementById("winner").style.backgroundColor = "lightgreen";
-      document.getElementById("winner").style.color = "white";
-      //document.getElementsByClassName("p1Dice").removeAttribute("fill");
-      //document.getElementById("playerOne").style.fill = "lightgreen";
+      document.getElementById("spil").style.display = "none";//fjerner roll
+      document.getElementById("winner").innerHTML = "The winner is Player 1";//fortæller hvem der vandt spillet
+      document.getElementById("winner").style.backgroundColor = "lightgreen";//ændre baggrundsfarven
+      document.getElementById("winner").style.color = "white";//ændre tekst farven
+      //document.getElementsByClassName("p1Dice").removeAttribute("fill"); //Test i at skifte terningers fill for vinder (virker ikke, fill er allerede defineret)
+      //document.getElementByClassName("playerOne").style.fill = "lightgreen";//Test i at skifte terningers fill for vinder (virker ikke, fill er allerde defineret)
     }
+
+    /** Ved spiller 2 har vundet 5 runder fjernes Roll knappen winner ændre text og skifter farve i baggrund og text  */
     if(counter2 === 5){
-      document.getElementById("spil").style.display = "none";
-      document.getElementById("winner").innerHTML = "The winner is Player 2";
-      document.getElementById("winner").style.backgroundColor = "lightgreen";
-      document.getElementById("winner").style.color = "white";
+      document.getElementById("spil").style.display = "none";//fjerner roll 
+      document.getElementById("winner").innerHTML = "The winner is Player 2";//fortæller hvem der vandt
+      document.getElementById("winner").style.backgroundColor = "lightgreen";//ændrer baggrundsfarve
+      document.getElementById("winner").style.color = "white";//ændrer tekst farven
       
-      //document.getElementById("playerTwo").style.fill = "lightgreen";
+      //document.getElementById("playerTwo").style.fill = "lightgreen"; ////Test i at skifte terningers fill for vinder (virker ikke, fill er allerde defineret)
     }
    
      
